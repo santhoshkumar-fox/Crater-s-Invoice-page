@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <title>page1</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="headercontainer">
+                <div class="header_left">
+                    <h1 id="title_text">
+                        Crater
+                    </h1>
+                </div>
+                <div class="header_right">
+                    <button id="addbut">+</button>
+                    <div class="search_bar" id="searchb">
+                        <i class="fa-solid fa-magnifying-glass" style="color:grey ;"></i>
+                        <input type="text" placeholder="scearch something!">
+        
+                    </div>
+                    <div class="admine">
+        
+                        <p id="username">username</p>
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="Section">
+            <div class="leftsection">
+                <div class="titleheader">
+                    <p id="section_title">New Invoice</p>
+                    <p id="section_path">Home / Invoic / New Invoice</p>
+                </div>
+                <div class="cutomerdata">
+                    <div class="customerdataleft">
+                        
+                        <input type="text" id="newcustomer" placeholder="New customer">
+                    </div>
+                    <div class="customerdataright">
+                        <div class="invoiceDate">
+                            <p>invoiceDate</p>
+                            <div class="invoicedatecon">
+                                <input type="date" id="invoiceDateinput">
+                            </div>
+                        </div>
+                        <div class="Duedate">
+                            <p>Duedate</p>
+                            <div class="Duedatecon"><input type="date" id="Duedateinput"></div>
+                        </div>
+                        <div class="inv_number">
+                            <p>inv_number</p>
+                            <div class="inv_numbercon"><input type="text" id="inv_numberinput" placeholder="INV-0001"></div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="productdata">
+                    <div class="producttable">
+                        <table id="productTabler">
+                            <tr>
+                                <th><p>Items</p></th>
+                                <th><p>Quantity</p></th>
+                                <th><p>Price</p></th>
+                                <th><p>Amount</p></th>
+
+                            </tr>
+                            <tr>
+                                <th><div class="itemnamecon"><input type="text" id="itemName"></div></th>
+                                <th><div class="itemQuantitycon"><input type="number" id="itemQuantity"></div></th>
+                                <th><div class="itempricecon"><input type="text" id="itemprice" placeholder="$ 0.0"></div></th>
+                                <th><div class="itemAmountcon"><p id="itemamount">0</p></div></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="addproduct">
+                        <button onclick="additems()">
+                            Add Items
+                            
+                        </button>
+                    </div>
+
+
+                </div>
+                <div class="finalarea">
+                    <div class="ExtraText">
+                        <p>Notes</p>
+                        <div class="textAreacon">
+                            <textarea placeholder="Add Extra Text" id="extratextarea" rows = "5" cols = "40" maxlength = "100" >
+
+                            </textarea>
+                            
+                        </div>
+                        <div class="Loadpreviewcon"><button onclick="validations()" id="Loadpreview">LOAD</button></div>
+                        
+
+                    </div>
+                    <div class="subtotal">
+                        <div class="subcon">
+                            <p>SUB TOTAL</p>
+                            <p>$ 0.00</p>
+                        </div>
+                        
+                        <div class="discountcon">
+                            <p>DISCOUNT</p>
+                            <input id="discountinput" type="text" placeholder="$0.00">
+                        </div>
+                        <div class="addtaxcon">
+                            <p>+ Add Tax</p>
+                        </div>
+                        <div class="Totalcon">
+                            <p>TOTAL AMOUNT</p>
+                            <p id="totalamopunt">$0.00</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- customername and isssu dates  -->
+
+
+
+            
+            <div class="rightsection">
+                <!-- Preview outter html with print and pdf download options -->
+                <div class="pdfpriverw" id="card">
+                     <div class="cardTitle" ><p>Crater Invoice,Ink</p></div>   
+                     <div class="dateIssed">
+                        <div class="left_iised">
+                            <p id="cardcompanyname">companyname</p>
+                            <P id="cardstateaddress">India</P>
+                        </div>
+                        <div class="right_iised">
+                            <p>Invoice NO</p>
+                            <p id="cardinvoiceno">12345</p>
+                            <p>Issued Date</p>
+                            <p id = "cardinvoicedate">12-21-3122</p>
+                            <p>DueDate</p>
+                            <P id=""cardduedate>12-32-456</P>
+                        </div>
+                     </div>
+            </div>
+            <div class="pdffunctioningbuttons">
+                <div class="printbutton"><button>Print</button></div>
+                <div class="downloadButton" id="downloadbtn"><button onclick="download()">Download</button></div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+<script>
+
+    
+</script>
+</html>

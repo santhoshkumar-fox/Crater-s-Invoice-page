@@ -1,0 +1,516 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  
+  
+  
+}
+
+header {
+}
+
+.headercontainer {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  background: linear-gradient(90deg, #605bda 80%, #5f5bdacf);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  box-shadow: inset 5px 5px 20px rgba(62, 61, 61, 0.121), 5px 5px 12px;
+}
+.header_left {
+  width: 100px;
+}
+#title_text {
+  width: 100px;
+  color: whitesmoke;
+  letter-spacing: 5px;
+  font-weight: 100w;
+  
+}
+body{
+  background-color: #f0f5f8;
+}
+.header_right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header_right button {
+  width: 20px;
+  height: 25px;
+  
+  outline: 0;
+  border: 0;
+}
+.header_right .search_bar {
+  height: 25px;
+  background-color: #f0f5f8;
+  padding: 5px;
+  display: flex;
+  gap: 3px;
+  border-radius: 10px;
+}
+.header_right .search_bar input {
+  height: 100%;
+  border: 0;
+  outline: 0;
+  caret-color: #605bda;
+
+  background-color: transparent;
+  margin: 0px 10px;
+}
+.admine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px;
+  padding: 5px;
+  height: 25px;
+  border-radius: 10px;
+  border: whitesmoke solid 1px;
+}
+.admine i {
+  color: white;
+}
+/* sections */
+
+section {
+  display: flex;
+  /* display: none; */
+  width: 100%;
+  background-color: purple;
+  height: 100vh;
+}
+section .leftsection {
+  width: 70%;
+  background-color: #f0f5f8;
+  padding: 20px;
+}
+/* title */
+
+.leftsection .titleheader {
+  margin-top: 70px;
+
+  font-weight: bold;
+  font-size: 20px;
+}
+.leftsection .titleheader p {
+  padding: 10px;
+}
+#section_title {
+}
+#section_path {
+  font-size: 15px;
+  word-spacing: 5px;
+  font-weight: 100;
+}
+/* customerdata */
+section .leftsection .cutomerdata {
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cutomerdata .customerdataleft {
+  width: 400px;
+  height: 100px;
+  border-radius: 10px;
+
+  border: 1px solid #605bda;
+}
+
+/* .customerdataleft input:active{
+    border: 1px solid red;
+} */
+.cutomerdata .customerdataleft input {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  padding: 0px 25%;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #5f5bdab9;
+}
+
+.cutomerdata .customerdataright {
+  width: 400px;
+  display: grid;
+
+  grid-template-columns: repeat(2, 2fr);
+  /* padding: 20px; */
+  row-gap: 10px;
+  column-gap: 20px;
+}
+.customerdataright {
+  padding: 10px;
+}
+.customerdataright p {
+  color: #605bda;
+  padding-bottom: 5px;
+  font-size: 13px;
+}
+.customerdataright input {
+  padding: 2px 20px;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  margin: 2px;
+  caret-color: #605bda;
+  color: grey;
+}
+.invoicedatecon {
+  border: 1px solid #5f5bda57;
+  background-color: white;
+  border-radius: 10px;
+}
+.Duedatecon {
+  border: 1px solid #5f5bda57;
+  background-color: white;
+  border-radius: 10px;
+}
+.inv_numbercon {
+  border: 1px solid #5f5bda57;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* producttable */
+
+.productdata {
+  border: 1px solid #605bda;
+  /* background-color: whitesmoke; */
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-bottom: 0px;
+  /* background-color: red; */
+  justify-content: center;
+  align-content: space-between;
+}
+.productdata table tr th {
+  width: 100%;
+  padding: 10px;
+  /* border-top: 1px solid grey; */
+}
+.productdata table tr th {
+  border-bottom: 1px solid #605bda;
+}
+
+.productdata table {
+  margin-bottom: 0px;
+}
+
+/* row input containers */
+.itemnamecon {
+  width: 100%;
+  border-radius: 20em;
+  background-color: white;
+  border: solid 1px #605bda;
+}
+.itemnamecon input {
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  height: 30px;
+}
+.itemQuantitycon {
+  width: 100px;
+  border-radius: 20em;
+  background-color: white;
+  border: solid 1px #605bda;
+}
+.itemQuantitycon input {
+  width: 50px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  height: 30px;
+}
+.itempricecon {
+  width: 100px;
+  border-radius: 20em;
+  background-color: white;
+  border: solid 1px #605bda;
+}
+.itempricecon input {
+  width: 50px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  height: 30px;
+}
+
+.productdata button {
+  width: 100%;
+  display: flex;
+  border: 0;
+  padding: 10px;
+  margin-top: 0;
+  justify-content: center;
+  align-content: center;
+  background-color: transparent;
+}
+.productdata button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  flex-wrap: wrap;
+  margin-top: 0px;
+}
+.productdata button:active {
+  background: linear-gradient(0deg, #605bda 50%, transparent);
+}
+
+/* finalarea */
+.finalarea {
+  margin-top: 20px;
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+.finalarea .ExtraText {
+  margin-top: 10px;
+  /* background-color: red; */
+  box-sizing: border-box;
+
+  
+  /* padding: 20px; */
+  width: 36%;
+  height: 100%;
+  
+}
+
+.textAreacon {
+
+  margin-left: 10px;
+  width: 100%;
+  /* background-color: red; */
+  height: 200px;
+  
+}
+#extratextarea {
+  align-items: center;
+  
+  width: 80%;
+  height: 80%;
+  border: #605bda 1px solid;
+  border-radius: 20px;
+  resize: none;
+  margin-bottom: 10px;
+}
+.Loadpreviewcon{
+    display: flex;
+    /* background-color: black; */
+   
+}
+#Loadpreview{
+    margin-left: 40px;
+    padding: 10px;
+    width: 70px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    background-color: #605bda;
+    color: white;
+    
+    
+}
+
+.subtotal {
+  background-color: #5f5bda7a;
+  width: 40%;
+  height: 200px;
+  border-radius: 20px;
+
+}
+section .rightsection {
+  width: 30%;
+  height: 100vh;
+  background-color: #f0f5f8;
+
+  padding: 20px;
+}
+
+/* .subtotal */
+.subtotal p{
+    color: rgba(52, 48, 48, 0.769);
+    font-size: 20px;
+    font-weight: bolder;
+}
+.subtotal{
+    padding: 10px;
+    height: auto;
+}
+.subcon{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.discountcon{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.discountcon input{
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    text-align: right;
+    width: 70px;
+    padding-right: 4px;
+    font-size: 20px;
+    
+
+}
+.addtaxcon{display: flex;
+    justify-content: right;
+    border-bottom: 1px solid;
+    padding: 10px;}
+.Totalcon{display: flex;
+    justify-content: space-between;
+    padding: 10px;}
+.rightsection .pdfpriverw {
+  width: 100%;
+  height: 80%;
+  background-color: white;
+  margin-top: 70px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.801);
+}
+
+.pageview{
+
+    
+    
+    
+}
+.cardTitle{
+    /* background-color: #605bda; */
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg,#605bda 75%,#f0f5f8 );
+    border-radius: 0px;
+    
+
+}
+.cardTitle p{
+    font-size: 20px;
+    color: white;
+    font-weight: 500w;
+}
+.dateIssed{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 10px;
+}
+.left_iised{
+
+}
+.right_iised{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    column-gap: 15px;
+}
+
+.rightsection .pdffunctioningbuttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0;
+  padding: 25px;
+  padding-top:30px;
+}
+.pdffunctioningbuttons button {
+  color: white;
+  background-color: #605bda;
+  outline: 0;
+  border: 0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width:786Px){
+  section{
+    display: flex;
+    flex-direction: column;
+  }
+  section .leftsection {
+    width: 100%;
+  }
+  section .rightsection{
+    width: 100%;
+    height: 645px !important;
+  }
+  .cutomerdata .customerdataleft input {
+    width: 20px;
+  }
+  .subtotal p{
+    font-size: 10px;
+  }
+  #addbut{
+    display: none;
+  }
+}
+
+@media only screen and (max-width:490px){
+  productdata {
+    width: 100%;
+  }
+  .subtotal{
+    width: 100%;
+    
+  }
+  .cutomerdata{
+    flex-direction: column;
+    padding: 20px;
+  }
+  .customerdataleft{
+    width: 300px;
+    padding: 10px;
+  }
+  #newcustomer{
+    width: 0%;
+  }
+  .customerdataright{
+    width: 90%;
+    padding: 20px;
+  }
+
+  .subtotal p{
+    font-size: 10px;
+  }
+  .admine{
+    display: none;
+  }
+}
+
